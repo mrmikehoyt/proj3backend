@@ -1,0 +1,45 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend of the chat application using socket.io and express",
+  "main": "server.js",
+  "engines": {
+    "npm": "6.12.1",
+    "node": "12.13.1"
+  },
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "frontend": "cd .. && npm start --prefix frontend",
+    "frontendinstall": "npm install --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "socket.io",
+    "JavaScript"
+  ],
+  "author": "Michael , Ian , Brian, Kephane, Abel, John",
+  "license": "none",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "config": "^3.3.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.0",
+    "mongoose": "^5.9.25",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "socket.io": "^2.3.0"
+  }
+}
