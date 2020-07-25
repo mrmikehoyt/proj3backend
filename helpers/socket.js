@@ -2,7 +2,6 @@ const users = [];
 
 const addUser = ({ id, name}) => {
   name = name.trim().toLowerCase();
-  
 
   const existingUser = users.find((user) => user.name === name);
 
